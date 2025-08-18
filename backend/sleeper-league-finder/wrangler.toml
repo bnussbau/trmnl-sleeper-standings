@@ -1,0 +1,9 @@
+name = "sleeper-league-finder"
+main = "src/index.js"
+compatibility_date = "2024-01-01"
+
+[env.preview]
+name = "sleeper-league-finder-preview"
+
+[env.production]
+name = "sleeper-league-finder"

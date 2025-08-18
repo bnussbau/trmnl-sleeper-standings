@@ -1,0 +1,76 @@
+<div class="layout">
+  <div class="stretch-y">
+    <table class="table table--condensed">
+      <thead>
+        <tr>
+          <th><span class="title title--small" style="text-align: center;">#</span></th>
+          <th><span class="title title--small">Team Name</span></th>
+          <th><span class="title title--small" style="text-align: center;">W</span></th>
+          <th><span class="title title--small" style="text-align: center;">L</span></th>
+          <th><span class="title title--small">PF</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        {% comment %} Sort rosters by projected points (ppts) - highest first {% endcomment %}
+        {% assign ppts_values = '' %}
+        {% for roster in rosters %}
+          {% assign ppts_values = ppts_values | append: roster.settings.ppts | append: '||' %}
+        {% endfor %}
+
+        {% assign ppts_values = ppts_values | split: '||' | sort_natural | reverse %}
+        {% assign position = 1 %}
+
+        {% comment %} Sort rosters by wins first, then by projected points (ppts) - highest first {% endcomment %}
+        {% assign sort_values = '' %}
+        {% for roster in rosters %}
+          {% assign wins = roster.settings.wins | plus: 0 %}
+          {% assign ppts = roster.settings.ppts | plus: 0 %}
+          {% comment %} Pad wins to 3 digits and points to 6 digits for proper numeric sorting {% endcomment %}
+          {% assign wins_padded = wins | prepend: '000' | slice: -3, 3 %}
+          {% assign ppts_padded = ppts | prepend: '000000' | slice: -6, 6 %}
+          {% assign sort_key = wins_padded | append: '.' | append: ppts_padded %}
+          {% assign sort_values = sort_values | append: sort_key | append: '||' %}
+        {% endfor %}
+
+        {% assign sort_values = sort_values | split: '||' | sort | reverse %}
+        {% assign position = 1 %}
+
+        {% for sort_value in sort_values %}
+          {% for roster in rosters %}
+            {% assign wins = roster.settings.wins | plus: 0 %}
+            {% assign ppts = roster.settings.ppts | plus: 0 %}
+            {% comment %} Pad wins to 3 digits and points to 6 digits for proper numeric sorting {% endcomment %}
+            {% assign wins_padded = wins | prepend: '000' | slice: -3, 3 %}
+            {% assign ppts_padded = ppts | prepend: '000000' | slice: -6, 6 %}
+            {% assign current_sort_key = wins_padded | append: '.' | append: ppts_padded %}
+            {% if current_sort_key == sort_value %}
+              {% assign owner_id = roster.owner_id %}
+              {% assign user_info = user_lookup | split: owner_id | last | split: '||' | first %}
+
+              {% if user_info != '' %}
+                {% assign display_name = user_info | split: '|' | first %}
+                {% assign team_name = user_info | split: '|' | last %}
+
+                {% if display_name == user_name %}
+                  {% assign highlight = true %}
+                {% else %}
+                  {% assign highlight = false %}
+                {% endif %}
+
+                {% render 'standings_item' with team_name: team_name, display_name: display_name, roster: roster, index: position, style: 'condensed', highlight: highlight %}
+
+                {% assign position = position | plus: 1 %}
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="title_bar">
+  <img class="image" src="data:image/svg+xml;base64,{{ plugin_icon | base64_encode }}">
+  <span class="title">Sleeper</span>
+  <span class="instance">{{ trmnl.plugin_settings.custom_fields_values.league_name }}</span>
+</div>

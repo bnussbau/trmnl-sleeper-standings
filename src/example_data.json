@@ -1,0 +1,277 @@
+{
+  "IDX_0": {
+    "data": [
+      {
+        "owner_id": "2",
+        "settings": {
+          "division": 2,
+          "fpts": 1530,
+          "fpts_against": 1459,
+          "fpts_against_decimal": 82,
+          "fpts_decimal": 28,
+          "losses": 7,
+          "ppts": 1637,
+          "ppts_decimal": 36,
+          "ties": 0,
+          "total_moves": 0,
+          "waiver_adjusted": 15,
+          "waiver_budget_used": 0,
+          "waiver_position": 9,
+          "wins": 7
+        }
+      },
+      {
+        "owner_id": "3",
+        "settings": {
+          "division": 1,
+          "fpts": 1718,
+          "fpts_against": 1713,
+          "fpts_against_decimal": 76,
+          "fpts_decimal": 56,
+          "losses": 7,
+          "ppts": 1834,
+          "ppts_decimal": 38,
+          "ties": 0,
+          "total_moves": 0,
+          "waiver_adjusted": 15,
+          "waiver_budget_used": 0,
+          "waiver_position": 12,
+          "wins": 7
+        }
+      },
+      {
+        "owner_id": "4",
+        "settings": {
+          "division": 2,
+          "fpts": 1814,
+          "fpts_against": 1691,
+          "fpts_against_decimal": 78,
+          "fpts_decimal": 98,
+          "losses": 5,
+          "ppts": 1903,
+          "ppts_decimal": 60,
+          "ties": 0,
+          "total_moves": 0,
+          "waiver_adjusted": 15,
+          "waiver_budget_used": 0,
+          "waiver_position": 10,
+          "wins": 9
+        }
+      },
+      {
+        "owner_id": "5",
+        "settings": {
+          "division": 1,
+          "fpts": 1557,
+          "fpts_against": 1635,
+          "fpts_against_decimal": 52,
+          "fpts_decimal": 16,
+          "losses": 9,
+          "ppts": 1658,
+          "ppts_decimal": 66,
+          "ties": 0,
+          "total_moves": 0,
+          "waiver_adjusted": 15,
+          "waiver_budget_used": 0,
+          "waiver_position": 2,
+          "wins": 5
+        }
+      },
+      {
+        "owner_id": "6",
+        "settings": {
+          "division": 2,
+          "fpts": 1937,
+          "fpts_against": 1477,
+          "fpts_against_decimal": 58,
+          "fpts_decimal": 72,
+          "losses": 2,
+          "ppts": 2039,
+          "ppts_decimal": 22,
+          "ties": 0,
+          "total_moves": 0,
+          "waiver_adjusted": 15,
+          "waiver_budget_used": 0,
+          "waiver_position": 6,
+          "wins": 12
+        }
+      },
+      {
+        "owner_id": "7",
+        "settings": {
+          "division": 1,
+          "fpts": 1671,
+          "fpts_against": 1577,
+          "fpts_against_decimal": 24,
+          "fpts_decimal": 40,
+          "losses": 6,
+          "ppts": 1788,
+          "ppts_decimal": 70,
+          "ties": 0,
+          "total_moves": 0,
+          "waiver_adjusted": 15,
+          "waiver_budget_used": 0,
+          "waiver_position": 4,
+          "wins": 8
+        }
+      },
+      {
+        "owner_id": "8",
+        "settings": {
+          "division": 2,
+          "fpts": 1483,
+          "fpts_against": 1592,
+          "fpts_against_decimal": 22,
+          "fpts_decimal": 56,
+          "losses": 8,
+          "ppts": 1563,
+          "ppts_decimal": 82,
+          "ties": 0,
+          "total_moves": 0,
+          "waiver_adjusted": 15,
+          "waiver_budget_used": 0,
+          "waiver_position": 8,
+          "wins": 6
+        }
+      },
+      {
+        "owner_id": "9",
+        "settings": {
+          "division": 1,
+          "fpts": 1447,
+          "fpts_against": 1571,
+          "fpts_against_decimal": 66,
+          "fpts_decimal": 12,
+          "losses": 7,
+          "ppts": 1589,
+          "ppts_decimal": 92,
+          "ties": 0,
+          "total_moves": 0,
+          "waiver_adjusted": 15,
+          "waiver_budget_used": 0,
+          "waiver_position": 3,
+          "wins": 7
+        }
+      },
+      {
+        "owner_id": "10",
+        "settings": {
+          "division": 2,
+          "fpts": 1489,
+          "fpts_against": 1714,
+          "fpts_against_decimal": 42,
+          "fpts_decimal": 16,
+          "losses": 9,
+          "ppts": 1649,
+          "ppts_decimal": 86,
+          "ties": 0,
+          "total_moves": 0,
+          "waiver_adjusted": 15,
+          "waiver_budget_used": 0,
+          "waiver_position": 1,
+          "wins": 5
+        }
+      },
+      {
+        "owner_id": "11",
+        "settings": {
+          "fpts": 1377,
+          "fpts_against": 1618,
+          "fpts_against_decimal": 64,
+          "fpts_decimal": 38,
+          "losses": 12,
+          "ppts": 1485,
+          "ppts_decimal": 26,
+          "ties": 0,
+          "total_moves": 0,
+          "waiver_adjusted": 15,
+          "waiver_budget_used": 0,
+          "waiver_position": 7,
+          "wins": 2
+        }
+      },
+      {
+        "owner_id": "12",
+        "settings": {
+          "fpts": 1668,
+          "fpts_against": 1693,
+          "fpts_against_decimal": 26,
+          "fpts_decimal": 78,
+          "losses": 7,
+          "ppts": 1767,
+          "ppts_decimal": 96,
+          "ties": 0,
+          "total_moves": 0,
+          "waiver_adjusted": 15,
+          "waiver_budget_used": 0,
+          "waiver_position": 11,
+          "wins": 7
+        }
+      }
+    ]
+  },
+  "IDX_1": {
+          "data": [
+        {
+          "display_name": "User 1",
+          "team_name": "Team 1",
+          "user_id": "12"
+        },
+        {
+          "display_name": "User 2",
+          "team_name": "Team 2",
+          "user_id": "2"
+        },
+        {
+          "display_name": "User 3",
+          "team_name": "Team 3",
+          "user_id": "1"
+        },
+        {
+          "display_name": "User 4",
+          "team_name": "Team 4",
+          "user_id": "3"
+        },
+        {
+          "display_name": "User 5",
+          "team_name": "Team 5",
+          "user_id": "4"
+        },
+        {
+          "display_name": "User 6",
+          "team_name": "Team 6",
+          "user_id": "5"
+        },
+        {
+          "display_name": "User 7",
+          "team_name": "Team 7",
+          "user_id": "6"
+        },
+        {
+          "display_name": "User 8",
+          "team_name": "Team 8",
+          "user_id": "7"
+        },
+        {
+          "display_name": "User 9",
+          "team_name": "Team 9",
+          "user_id": "8"
+        },
+        {
+          "display_name": "User 10",
+          "team_name": "Team 10",
+          "user_id": "9"
+        },
+        {
+          "display_name": "User 11",
+          "team_name": "Team 11",
+          "user_id": "10"
+        },
+        {
+          "display_name": "User 12",
+          "team_name": "Team 12",
+          "user_id": "11"
+        }
+    ]
+  }
+}
