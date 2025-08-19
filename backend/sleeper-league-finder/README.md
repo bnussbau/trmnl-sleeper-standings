@@ -1,14 +1,9 @@
-# Sleeper League Finder
+# 🏈 Sleeper League Finder
 
 A full-stack web application deployed to Cloudflare Workers that helps users find their Sleeper league IDs by entering their username and season year.
 
-## Features
+<img width="663" height="833" alt="image" src="https://github.com/user-attachments/assets/c3f7a4f7-0df2-4ef3-be13-70836ae223b9" />
 
-- 🏈 **Sleeper API Integration**: Fetches user data and league information from Sleeper's API
-- 🎨 **Modern UI**: Beautiful, responsive design with gradient backgrounds and smooth animations
-- 📋 **Easy Copy**: One-click copy functionality for league IDs
-- 📱 **Mobile Responsive**: Works perfectly on all device sizes
-- ⚡ **Fast Performance**: Built on Cloudflare Workers for global edge deployment
 
 ## How It Works
 
@@ -16,7 +11,7 @@ A full-stack web application deployed to Cloudflare Workers that helps users fin
 2. **User Lookup**: Backend calls Sleeper API to get user information
 3. **League Fetch**: Backend retrieves all leagues the user is in for the specified season
 4. **Results Display**: Shows user info and league details in a clean table format
-5. **Copy Functionality**: Easy one-click copying of league IDs
+5. **Copy Functionality**: One-click copying of league IDs
 
 ## API Endpoints
 
@@ -34,9 +29,9 @@ A full-stack web application deployed to Cloudflare Workers that helps users fin
 
 ### Prerequisites
 
-- Node.js (v16 or higher)
+- Node.js
 - npm or yarn
-- Cloudflare account (for deployment)
+- Cloudflare account
 
 ### Installation
 
@@ -75,6 +70,8 @@ sleeper_cloudflare/
 ## Deployment
 
 ### Deploy to Cloudflare Workers
+
+Run deploy.sh OR
 
 1. Install Wrangler CLI (if not already installed):
 ```bash
@@ -132,7 +129,3 @@ This application integrates with the following Sleeper API endpoints:
 ## License
 
 This project is open source and available under the [MIT License](LICENSE).
-
-## Support
-
-If you encounter any issues or have questions, please open an issue on the repository or contact the maintainers.
