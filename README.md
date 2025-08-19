@@ -2,8 +2,7 @@
 
 A TRMNL recipe that displays real-time fantasy football league standings from Sleeper and lets you monitor your fantasy league performance.
 
-<img width="877" height="590" alt="image" src="https://github.com/user-attachments/assets/29083fd3-cf93-4e32-9022-568ddbd9762e" />
-
+<img width="976" height="656" alt="image" src="https://github.com/user-attachments/assets/aa65b249-43b6-400c-abb7-d6ee0e25ec1f" />
 
 ### Configuration
 
