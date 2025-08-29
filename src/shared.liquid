@@ -19,6 +19,20 @@
   %}
 {% endfor %}
 
+ {% comment %} Check if everyone has 0 points {% endcomment %}
+ {% assign all_zero_points = true %}
+ {% for roster in rosters %}
+   {% assign ppts = roster.settings.ppts | plus: 0 %}
+   {% if ppts > 0 %}
+     {% assign all_zero_points = false %}
+     {% break %}
+   {% endif %}
+ {% endfor %}
+
+ {% if all_zero_points %}
+       <span class="title" style="text-align: center;">All teams at zero. Waiting for Fantasy Football to kick off.</span>
+ {% endif %}
+
 {% template standings_item %}
 {% if style == 'condensed' %}
   <tr>
