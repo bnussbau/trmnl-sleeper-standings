@@ -18,7 +18,7 @@
         {% assign sort_values = '' %}
         {% for roster in rosters %}
           {% assign wins = roster.settings.wins | plus: 0 %}
-          {% assign ppts = roster.settings.ppts | plus: 0 %}
+          {% assign ppts = roster.settings.fpts | plus: 0 %}
           {% comment %} Pad wins to 3 digits and points to 6 digits for proper numeric sorting {% endcomment %}
           {% assign wins_padded = wins | prepend: '000' | slice: -3, 3 %}
           {% assign ppts_padded = ppts | prepend: '000000' | slice: -6, 6 %}
@@ -32,7 +32,7 @@
         {% for sort_value in sort_values %}
           {% for roster in rosters %}
             {% assign wins = roster.settings.wins | plus: 0 %}
-            {% assign ppts = roster.settings.ppts | plus: 0 %}
+            {% assign ppts = roster.settings.fpts | plus: 0 %}
             {% comment %} Pad wins to 3 digits and points to 6 digits for proper numeric sorting {% endcomment %}
             {% assign wins_padded = wins | prepend: '000' | slice: -3, 3 %}
             {% assign ppts_padded = ppts | prepend: '000000' | slice: -6, 6 %}
