@@ -30,23 +30,23 @@
  {% endfor %}
 
  {% if all_zero_points %}
-       <span class="title" style="text-align: center;">All teams at zero. Waiting for Fantasy Football to kick off.</span>
+       <span class="title">All teams at zero. Waiting for Fantasy Football to kick off.</span>
  {% endif %}
 
 {% template standings_item %}
 {% if style == 'condensed' %}
   <tr>
     <th>
-      <span class="label {% if highlight %}label--outline{% endif %}" style="text-align: center;">{{ index }}</span>
+      <span class="label {% if highlight %}label--outline{% endif %}">{{ index }}</span>
     </th>
     <th>
       <span class="label">{{ team_name }}</span>
     </th>
     <th>
-      <span class="label {% if highlight %}label--outline{% endif %}" style="text-align: center;">{{ roster.settings.wins }}</span>
+      <span class="label {% if highlight %}label--outline{% endif %}">{{ roster.settings.wins }}</span>
     </th>
     <th>
-      <span class="label" style="text-align: center;">{{ roster.settings.losses }}</span>
+      <span class="label">{{ roster.settings.losses }}</span>
     </th>
     <th>
       <span class="label">{{ roster.settings.fpts }}</span>
@@ -55,7 +55,7 @@
 {% else %}
   <tr>
     <th>
-      <span class="label {% if highlight %}label--outline{% endif %}" style="text-align: center;">{{ index }}</span>
+      <span class="label {% if highlight %}label--outline{% endif %}">{{ index }}</span>
     </th>
     <th>
       <span class="label">{{ display_name }}</span>
@@ -64,10 +64,10 @@
       <span class="label">{{ team_name }}</span>
     </th>
     <th>
-      <span class="label {% if highlight %}label--outline{% endif %}" style="text-align: center;">{{ roster.settings.wins }}</span>
+      <span class="label {% if highlight %}label--outline{% endif %}">{{ roster.settings.wins }}</span>
     </th>
     <th>
-      <span class="label" style="text-align: center;">{{ roster.settings.losses }}</span>
+      <span class="label">{{ roster.settings.losses }}</span>
     </th>
     <th>
       <span class="label">{{ roster.settings.fpts }}.{{ roster.settings.fpts_decimal }}</span>
@@ -76,7 +76,7 @@
       <span class="label">{{ roster.settings.fpts_against }}</span>
     </th>
     <th>
-      <span class="label" style="text-align: center;">{{ roster.settings.waiver_position }}</span>
+      <span class="label">{{ roster.settings.waiver_position }}</span>
     </th>
   </tr>
 {% endif %}
