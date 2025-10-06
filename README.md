@@ -2,6 +2,8 @@
 
 A TRMNL recipe that displays real-time fantasy football league standings from Sleeper and lets you monitor your fantasy league performance.
 
+🏆 TRMNL Hackathon Winner ["Fantasy American Football"](https://usetrmnl.com/blog/hackathon-fantasy-american-football-winners) 08/2025 🏆
+
 <img width="976" height="656" alt="image" src="https://github.com/user-attachments/assets/aa65b249-43b6-400c-abb7-d6ee0e25ec1f" />
 
 ### Configuration
